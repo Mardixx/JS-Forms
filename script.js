@@ -34,7 +34,7 @@ let pwdConfirm = document.getElementById('pwd-confirm');
 
 pwd.addEventListener('keyup', () => {
     let pwdText = pwd.value.length
-    if (pwdText < 6) {
+    if (pwdText < 6 && pwdText != 0) {
         pwd.style.backgroundColor = 'red'
     }
 
@@ -55,5 +55,24 @@ pwdConfirm.addEventListener('keyup', () => {
         pwdConfirm.style.backgroundColor = 'white'
     }
 });
+
+// DarkMode / LightMode
+
+let html = document.querySelector('html');
+let darkmode = document.getElementById('toggle-darkmode');
+
+darkmode.addEventListener('change', () => {
+    switch (darkmode.value) {
+        case darkmode.value = 'dark':
+            html.style.backgroundColor = 'black'
+            html.style.color = 'white'
+            break;
+    
+        case darkmode.value = 'light':
+            html.style.backgroundColor = 'white'
+            html.style.color = 'black'
+            break;
+    }
+})
 
 
