@@ -1,6 +1,6 @@
 # JavaScript Forms : 
 
-This was an exercice at the BeCode formation. All went well and I didn't have an big problems
+This was an exercice at the BeCode formation. All went well and I didn't have any big problems.
 
 # About Me :
 
